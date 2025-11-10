@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabeçalho com Menu e Ícones</title>
+
+    <!-- Importa os ícones do Font Awesome -->
+    <!-- Essa biblioteca possui vários ícones prontos que podem ser usados com <i class="..."> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"&gt;
+
+    <!-- Arquivo CSS externo onde você vai estilizar o cabeçalho -->
+    <link rel="stylesheet" href="sttyle.css">
+    <link rel="stylesheet" href="sttyle2.css">
+</head>
+<body>
+   
+<!-- Cabeçalho da página -->
+<header class="cabecalho">
+   
+    <!-- Container do lado esquerdo: logo + menu -->
+    <div class="container-esquerda">
+
+        <!-- Logo do site -->
+        <img src="diamante.png" alt="Logo" class="logo">
+
+        <!-- Menu principal -->
+        <ul class="lista-menu">
+
+            <!-- ITEM 1: Programação -->
+            <li>
+                <!-- Ícone de código (fas = sólido, fa-code = ícone de código) -->
+                <a href="#"><i class="fa-etch fa-solid fa-heart"></i>Perfumes</a>
+
+                <!-- Submenu com linguagens -->
+                <ul>
+                    <!-- Ícone do Python (fab = marcas, fa-python = logo Python) -->
+                    <li><a href="pagina.html"><i class="fa-notdog-duo fa-solid fa-envelope"></i>"Modelos"</a></li>
+                    <!-- Ícone do Java -->
+                    <li><a href="fotografia.html"><i class="fa-notdog-duo fa-solid fa-camera"></i>"Fotografia "</a></li>
+                    <!-- Ícone do JavaScript -->
+                    <li><a href="entrega.html"><i class="fa-notdog-duo fa-solid fa-truck"></i>" Entrega"</a></li>
+                </ul>
+            </li>
+
+            <!-- ITEM 2: Front-end -->
+            <li>
+                <!-- Ícone laptop/código -->
+                <a href="#"><i class="fa-etch fa-solid fa-box-archive"></i> Clientes</a>
+                <ul>
+                    <li><a href="pagina2.html"><i class="fa-etch fa-solid fa-eye"></i>" Atendimento"</a></li>
+                    <li><a href="malatendimento.html"><i class="fa-etch fa-solid fa-xmark"></i>"Nao gostei"</a></li>
+                    <li><a href="otimoatendimento.html"><i class="fab fa-react"></i> "amei"</a></li>
+                </ul>
+            </li>
+
+            <!-- ITEM 3: Infraestrutura -->
+            <li>
+                <a href="#"><i class="fas fa-server"></i> Compra oline</a>
+                <ul>
+                    <li><a href="pagina3.html"><i class="fas fa-network-wired"></i> .Redes</a></li>
+                    <li><a href="acesso.html"><i class="fas fa-cloud"></i> .Acesso</a></li>
+                </ul>
+            </li>
+
+            <!-- ITEM 4: Business -->
+            <li>
+                <a href="#"><i class="fas fa-briefcase"></i> Divulgacao</a>
+                <ul>
+                    <li><a href="marketing.html"><i class="fas fa-chart-line"></i> .Marketing</a></li>
+                    <li><a href="vendas.html"><i class="fas fa-handshake"></i>.Vendas</a></li>
+                </ul>
+            </li>
+
+            <!-- ITEM 5: Design & UX -->
+            <li>
+                <a href="#"><i class="fas fa-pencil-ruler"></i> Disponivel</a>
+                <ul>
+                    <li><a href="importados.html"><i class="fas fa-paint-brush"></i> .Importados</a></li>
+                    <li><a href="arabe.html"><i class="fas fa-drafting-compass"></i>.Arabe </a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Container do lado direito: ícones de atalho -->
+    <div class="container-direita">
+        <!-- Ícone de coração -->
+        <a href="#"><i class="fas fa-heart"></i></a>
+        <!-- Ícone de home -->
+        <a href="#"><i class="fas fa-home"></i></a>
+        <!-- Ícone de usuário -->
+        <a href="#"><i class="fas fa-user"></i></a>
+    </div>
+</header>
+<!--segunda parte da página-->
+<main class="conteudo">
+     
+    <!--seção 1: introdução-->
+    <section class="introducao">
+        <h1>bem-vindo ao mundo dos Perfumes</h1>
+        <p>É uma mistura de óleos, álcool e água, cuja função é proporcionar uma agradável e duradoura fragrância de aroma a
+             diferentes objetos, principalmente ao corpo humano.
+              Fragrância é uma mistura de matérias-primas, podem ser extratos de fontes naturais ou produzida sinteticamente.</p>
+              <img src="perfume.webp" alt="imagem de perfume">
+    </section>
+    <section class="beneficios">
+        <h2>Por que aprender sobre perfume?</h2>
+        <ul>
+            <li><i class="fa-solid fa-check"></i> Desenvolver  lembrancas<li></li>
+            <li><i class="fa-solid fa-check"></i> Humor e bom estar<li></li>
+            <li><i class="fa-solid fa-check"></i> Fragancias leves<li></li>
+        </ul>
+    </section>
+    <section class="recursos">
+        <h2> "Recomendados"</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="perfume2.jpg"alt="Perfumes">
+                <h3>Curso para vender perfumes</h3>
+                <p>Aprendam a vender de forma divertida.</p>
+                <a href="index3.html">saiba mais</a>
+            </div>
+        <div class="card">
+            <img src="perfume3.jpg" alt="perfume3">
+            <h3>Demostração do Cheiro</h3>
+            <p>Construa mas Clientes.</p>
+            <a href="demontracao.html">saiba mais</a>
+        </div>
+        <div class="card">
+            <img src="perfume4.jpg" alt="perfume4">
+            <h3>fotos que atrai mas Clientes</h3>
+            <p> chamativas e cheirosas.</p>
+            <a href="cliientes.html">saiba mais</a>
+          </div>
+        </div>
+ </section>
+</main>
+ <footer class="rodape">
+    <div class="conrtainer-rodape">
+        <p>&copy; Todos os direitos reservedos.</p>
+        <ul class="links-rodape">
+        <li><a href="#">Pagamento</a></li>
+        <li><a href="#">termos de uso </a></li>
+        <li><a href="contato.html">contatos</a></li>
+</ul>
+    </div> <footer class="rodape">
+        <div class="conrtainer-rodape">
+            <p>&copy; Todos os direitos reservedos.</p>
+            <ul class="links-rodape">
+            <li><a href="#">Pagamento</a></li>
+            <li><a href="#">termos de uso </a></li>
+            <li><a href="pagina.html">contatos</a></li>
+    </ul>
+        </div>
+     </footer>
+ </footer>
+</body>
+</html>
+

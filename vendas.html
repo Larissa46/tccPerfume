@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Perfumes de alta qualidade, com entrega rápida e promoções especiais. Confira nossa coleção e compre online!">
+    <title>Loja de Perfumes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #390c46;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #490354;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .product-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .product {
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        .product h3 {
+            color: #ea48bc;
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .product p {
+            color: #7f8c8d;
+            font-size: 1em;
+        }
+        .product .price {
+            color: #ff02c4;
+            font-size: 1.4em;
+            margin-top: 10px;
+        }
+        .product button {
+            background-color: #964db0;
+            color: rgb(6, 6, 6);
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .product button:hover {
+            background-color: #121415;
+        }
+        footer {
+            background-color: #0b0c0c;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .promo {
+            background-color: #b73ce7;
+            color: rgb(249, 148, 225);
+            padding: 15px;
+            text-align: center;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Loja de Perfumes Exclusivos</h1>
+        <p>Descubra fragrâncias únicas e compre online com entrega rápida.</p>
+    </header>
+
+    <nav>
+        <a href="#">Início</a>
+        <a href="#produtos">Perfumes</a>
+        <a href="#sobre">Sobre nós</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <section class="promo">
+        <h2>Promoção Especial!</h2>
+        <p>Compre 2 perfumes e ganhe 20% de desconto no segundo! Só até o final do mês.</p>
+    </section>
+
+    <section id="produtos">
+        <h2 style="text-align:center; padding: 20px;">Nossos Perfumes</h2>
+        <div class="product-container">
+            <div class="product">
+                <img src="jadore.jpg" alt="Perfume 1">
+                <h3>Jadore</h3>
+                <p>Uma fragrância clássica e sofisticada que nunca sai de moda. Perfeita para ocasiões especiais.</p>
+                <p class="price">R$ 650,00</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product">
+                <img src="boticario.jpg" alt="Perfume 2">
+                <h3>Boticario</h3>
+                <p>Uma fragrância masculina, intensa e ousada, com toques amadeirados e picantes.</p>
+                <p class="price">R$ 450,00</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product">
+                <img src="floral.jpg" alt="Perfume 3">
+                <h3>Floral</h3>
+                <p>Deliciosa e floral, uma fragrância que transmite felicidade e liberdade.</p>
+                <p class="price">R$ 390,00</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <h2 style="text-align:center; padding: 20px;">Sobre Nós</h2>
+        <p>Somos uma loja especializada em perfumes de alta qualidade. Nossa missão é oferecer fragrâncias que encantem e surpreendam nossos clientes. Trabalhamos com as melhores marcas do mercado e garantimos entrega rápida e segura.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Loja de Perfumes - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
