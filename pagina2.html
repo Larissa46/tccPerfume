@@ -1,71 +1,246 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cabeçalho com Menu e Ícones</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Demonstração — Testemunhos (Fictícios) | Loja de Perfumes</title>
+<style>
+  :root{
+    --pink:#b45f85; --bg1:#fff5f8; --card:#ffffff;
+    --muted:#666; --radius:12px;
+    font-family: "Poppins", Arial, sans-serif;
+  }
+  body{
+    margin:0;
+    background: linear-gradient(135deg, var(--bg1), #fff);
+    color: #222;
+    padding:40px 20px;
+    -webkit-font-smoothing:antialiased;
+  }
+  header{
+    text-align:center;
+    margin-bottom:20px;
+  }
+  header h1{ color:var(--pink); margin:0 0 6px; }
+  header p{ margin:0; color:var(--muted); font-size:0.95rem; }
 
-    <!-- Importa os ícones do Font Awesome -->
-    <!-- Essa biblioteca possui vários ícones prontos que podem ser usados com <i class="..."> -->
-    <link rel="stylesheet" href="file:///C:/Users/aluno/Desktop/2108/index.html#"&gt;
+  .notice {
+    max-width:900px;
+    margin: 12px auto 24px;
+    background:#fff3f6;
+    border-left:4px solid var(--pink);
+    padding:12px 16px;
+    border-radius:8px;
+    color:#7a2f4d;
+    text-align:center;
+    font-weight:600;
+  }
 
-    <!-- Arquivo CSS externo onde você vai estilizar o cabeçalho -->
-    <link rel="stylesheet" href="pagina2.css">
-    <link rel="stylesheet" href="sttyle2.css">
+  .grid{
+    max-width:1000px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    gap:18px;
+  }
+
+  .card{
+    background:var(--card);
+    padding:18px;
+    border-radius:var(--radius);
+    box-shadow:0 6px 18px rgba(0,0,0,0.06);
+    position:relative;
+    overflow:hidden;
+  }
+
+  .badge {
+    position:absolute;
+    top:12px;
+    right:12px;
+    background:rgba(180,95,133,0.12);
+    color:var(--pink);
+    font-size:12px;
+    padding:6px 8px;
+    border-radius:999px;
+    font-weight:600;
+  }
+
+  .quote {
+    font-size:1rem;
+    color:#333;
+    line-height:1.4;
+    margin-bottom:14px;
+    min-height:72px;
+  }
+
+  .meta {
+    display:flex;
+    align-items:center;
+    gap:12px;
+  }
+  .avatar{
+    width:48px;height:48px;border-radius:50%;
+    background:linear-gradient(135deg,#ffd6e8,#ffdfe8);
+    display:flex;align-items:center;justify-content:center;
+    font-weight:700;color:var(--pink);
+    box-shadow: inset 0 -4px 8px rgba(0,0,0,0.03);
+  }
+  .info small{ display:block; color:var(--muted); font-size:13px;}
+  .info strong{ display:block; font-size:15px; color:#222; margin-bottom:2px;}
+
+  .stars{ color:gold; font-size:14px; margin-top:8px;}
+
+  /* área de controle (opcional) */
+  .controls{
+    max-width:900px;margin:20px auto 0;display:flex;gap:12px;align-items:center;justify-content:flex-end;
+  }
+  .controls button{
+    background:var(--pink); color:white; border:none;padding:10px 14px;border-radius:10px;cursor:pointer;
+    box-shadow:0 6px 18px rgba(180,95,133,0.12);
+  }
+  .controls button.secondary{
+    background:#fff;border:1px solid #e9cfe0;color:var(--pink);
+  }
+
+  footer{ text-align:center; color:var(--muted); margin-top:28px; font-size:0.9rem;}
+  
+  @media (max-width:420px){
+    body{padding:18px}
+  }
+</style>
 </head>
 <body>
-   
-<!-- Cabeçalho da página -->
-<header class="cabecalho">
-   
-    <!-- Container do lado esquerdo: logo + menu -->
-    <a página-->
-<main class="conteudo">
-     
-    <!--seção 1: introdução-->
-      <section class="introducao">
-        <h1> Demonstração de falas de clientes</h1>
-        <p>Tratar uma cliente de perfume de forma excepcional vai muito além de simplesmente mostrar produtos. É sobre criar uma experiência
-             memorável, pessoal e sensorial. Uma cliente de perfume gosta de ser tratada como uma indivíduo única, em uma jornada para encontrar
-             uma assinatura olfativa que expresse sua personalidade e emoções.</p>
-              <!-- Logo do site -->
-        <img src="neutro.jpg"Logo class="logo">
-    </section>
-    <section class="beneficios">
-        <h2>Clientes</h2>
-        <ul>
-            <li><i class="fa-solid fa-check"></i> Atendimento<li></li>
-            <li><i class="fa-solid fa-check"></i>Nao gostei<li></li>
-            <li><i class="fa-solid fa-check"></i> Amei<li></li>
-        </ul>
-    </section>
-    <section class="recursos">
-        <h2> "clientes  satisfeitas"</h2>
-        
- </section>
-</main>
- <footer class="rodape">
-   
-</ul>
-    </div>
- </footer>
-</body>
-</html>div class="container-esquerda">
 
-      
-
-            
-
-    </div>
-
-    <!-- Container do lado direito: ícones de atalho -->
-    <div class="container-direita">
-        <!-- Ícone de coração -->
-        <a href="#"><i class="fas fa-heart"></i></a>
-        <!-- Ícone de home -->
-        <a href="#"><i class="fas fa-home"></i></a>
-        <!-- Ícone de usuário -->
-        <a href="#"><i class="fas fa-user"></i></a>
-    </div>
+<header>
+  <h1>Testemunhos — DEMONSTRAÇÃO</h1>
+  <p>Layout de depoimentos (usando exemplos fictícios). NÃO SÃO CLIENTES REAIS.</p>
 </header>
-<!--segunda parte d
+
+<div class="notice">
+  Aviso: Esta página contém **testemunhos de demonstração** para fins de apresentação e testes. Substitua por depoimentos verificados antes de publicar.
+</div>
+
+<div class="grid" id="testimonials">
+  <!-- Card 1 -->
+  <article class="card">
+    <div class="badge">Exemplo</div>
+    <div class="quote">“O perfume tem uma fixação incrível e o cheiro é sofisticado — recebi vários elogios!”</div>
+    <div class="meta">
+      <div class="avatar">AA</div>
+      <div class="info">
+        <strong>Ana Alves — <small>São Paulo</small></strong>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Card 2 -->
+  <article class="card">
+    <div class="badge">Exemplo</div>
+    <div class="quote">“Embalagem linda, entrega rápida. A fragrância é perfeita para ocasiões especiais.”</div>
+    <div class="meta">
+      <div class="avatar">RC</div>
+      <div class="info">
+        <strong>Rafael Costa — <small>Rio de Janeiro</small></strong>
+        <div class="stars">★★★★☆</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Card 3 -->
+  <article class="card">
+    <div class="badge">Exemplo</div>
+    <div class="quote">“Comprei para presentear e foi um sucesso! Aroma delicado e sofisticado.”</div>
+    <div class="meta">
+      <div class="avatar">ML</div>
+      <div class="info">
+        <strong>Marina Lopes — <small>Belo Horizonte</small></strong>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Card 4 -->
+  <article class="card">
+    <div class="badge">Exemplo</div>
+    <div class="quote">“Ótimo custo-benefício. A fragrância se mantém por horas sem ser enjoativa.”</div>
+    <div class="meta">
+      <div class="avatar">JP</div>
+      <div class="info">
+        <strong>João Pereira — <small>Curitiba</small></strong>
+        <div class="stars">★★★★☆</div>
+      </div>
+    </div>
+  </article>
+</div>
+
+<div class="controls" aria-hidden="false">
+  <button id="shuffle">Embaralhar exemplos</button>
+  <button id="addExample" class="secondary">Adicionar exemplo</button>
+</div>
+
+<footer>
+  Lembrete: use apenas depoimentos verificados em sua loja. Esta página é para demonstração.
+</footer>
+
+<script>
+  // Pequenas interações para demonstração (não cria depoimentos reais)
+  const testimonials = [
+    {
+      quote: "A fragrância é envolvente e dura muito tempo. Vou comprar novamente.",
+      name: "Camila Rocha",
+      city: "Florianópolis",
+      stars: "★★★★★",
+      initials: "CR"
+    },
+    {
+      quote: "Excelente atendimento e perfume com personalidade única.",
+      name: "Lucas Martins",
+      city: "Porto Alegre",
+      stars: "★★★★☆",
+      initials: "LM"
+    },
+    {
+      quote: "Perfeito para o dia a dia — leve e elegante.",
+      name: "Beatriz Souza",
+      city: "Salvador",
+      stars: "★★★★☆",
+      initials: "BS"
+    }
+  ];
+
+  function createCard(t){
+    const card = document.createElement('article');
+    card.className = 'card';
+    card.innerHTML = `
+      <div class="badge">Exemplo</div>
+      <div class="quote">${t.quote}</div>
+      <div class="meta">
+        <div class="avatar">${t.initials}</div>
+        <div class="info">
+          <strong>${t.name} — <small>${t.city}</small></strong>
+          <div class="stars">${t.stars}</div>
+        </div>
+      </div>
+    `;
+    return card;
+  }
+
+  document.getElementById('shuffle').addEventListener('click', () => {
+    const container = document.getElementById('testimonials');
+    // Embaralha nodes existentes (simples)
+    for (let i = container.children.length; i >= 0; i--) {
+      container.appendChild(container.children[Math.random() * i | 0]);
+    }
+  });
+
+  document.getElementById('addExample').addEventListener('click', () => {
+    const container = document.getElementById('testimonials');
+    const t = testimonials[Math.floor(Math.random()*testimonials.length)];
+    container.appendChild(createCard(t));
+    // Scroll leve até ao novo cartão
+    container.lastElementChild.scrollIntoView({behavior:'smooth', block:'center'});
+  });
+</script>
+</body>
+</html>

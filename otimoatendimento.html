@@ -3,59 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cabeçalho com Menu e Ícones</title>
+    <title>Avaliação Positiva | Essenza Perfumes</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #fce4ec, #fff5f8);
+            color: #444;
+        }
 
-    <!-- Importa os ícones do Font Awesome -->
-    <!-- Essa biblioteca possui vários ícones prontos que podem ser usados com <i class="..."> -->
-    <link rel="stylesheet" href="file:///C:/Users/aluno/Desktop/2108/index.html#"&gt;
+        header {
+            background-color: #b45f85;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
 
-    <!-- Arquivo CSS externo onde você vai estilizar o cabeçalho -->
-    <link rel="stylesheet" href="sttyle.css">
-    <link rel="stylesheet" href="sttyle2.css">
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        main {
+            max-width: 700px;
+            margin: 40px auto;
+            background: white;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        main h2 {
+            color: #b45f85;
+            margin-bottom: 10px;
+        }
+
+        main p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: 500;
+        }
+
+        form input, form textarea, form select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        form input:focus, form textarea:focus, form select:focus {
+            border-color: #b45f85;
+            box-shadow: 0 0 5px rgba(180, 95, 133, 0.4);
+        }
+
+        form textarea {
+            height: 120px;
+            resize: none;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            background-color: #b45f85;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #9c4b70;
+        }
+
+        .stars {
+            display: flex;
+            gap: 5px;
+            margin: 8px 0 15px;
+        }
+
+        .star {
+            font-size: 25px;
+            cursor: pointer;
+            color: #ccc;
+            transition: 0.3s;
+        }
+
+        .star:hover,
+        .star.active {
+            color: gold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 13px;
+            color: #777;
+        }
+    </style>
 </head>
-<body>      
+<body>
 
-    </div>
+    <header>
+        <h1>Essenza Perfumes</h1>
+        <p>Ficamos felizes que você amou seu perfume 💕</p>
+    </header>
 
-    <!-- Container do lado direito: ícones de atalho -->
-    <div class="container-direita">
-        <!-- Ícone de coração -->
-        <a href="#"><i class="fas fa-heart"></i></a>
-        <!-- Ícone de home -->
-        <a href="#"><i class="fas fa-home"></i></a>
-        <!-- Ícone de usuário -->
-        <a href="#"><i class="fas fa-user"></i></a>
-    </div>
-</header>
-<!--segunda parte da página-->
-<main class="conteudo">
-     
-    <!--seção 1: introdução-->
-    <section class="introducao">
-        <h1>Qual sua avaliação</h1>
-        <p>Temos muito enteresse de saber qual foi a sua experiência temos um bloquinho
-             de notas e avaliaçoes para voces clientes linda e cheirosas</p>
-            
-    </section>
-    <section class="beneficios">
-        <h2>"fotos especificas com boas qualidades"</h2>
-        <img src="otimo.jpg" alt="imagem de perfume">
-        <ul>
-            <li><i class="fa-solid fa-check"></i> Clientes muito satisfeitas<li></li>
-        </ul>
-    </section>
-    <section class="recursos">
-        <h2>"Amei a forma que eu fui  atendida"</h2>
-        <h2>"Super simpaticas"</h2>
-        <h2>"Entendi muito bem sobre fabricação do perfume e de onde vem "</h2>
-        
- </section>
-</main>
- <footer class="rodape">
-   
-</ul>
-    </div>
- </footer>
+    <main>
+        <h2>Conte sua experiência</h2>
+        <p>Seu feedback é muito importante para nós! Deixe aqui seu elogio, opinião ou história sobre o perfume que conquistou seu coração.</p>
+
+        <form action="agradecimento.html" method="post">
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+            <label for="perfume">Qual perfume você comprou?</label>
+            <input type="text" id="perfume" name="perfume" placeholder="Ex: Essenza Rosa ou Gold Bloom" required>
+
+            <label>Avaliação:</label>
+            <div class="stars">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+            <input type="hidden" name="nota" id="nota" value="0">
+
+            <label for="comentario">Deixe seu elogio ou opinião:</label>
+            <textarea id="comentario" name="comentario" placeholder="Escreva aqui sua experiência..." required></textarea>
+
+            <button type="submit">Enviar Avaliação</button>
+        </form>
+    </main>
+
+    <footer>
+        © 2025 Essenza Perfumes — Agradecemos seu carinho e confiança.
+    </footer>
+
+    <script>
+        // Script simples para as estrelas de avaliação
+        const stars = document.querySelectorAll('.star');
+        const nota = document.getElementById('nota');
+
+        stars.forEach(star => {
+            star.addEventListener('click', () => {
+                stars.forEach(s => s.classList.remove('active'));
+                star.classList.add('active');
+                nota.value = star.getAttribute('data-value');
+            });
+        });
+    </script>
+
 </body>
 </html>
-       
+
+  
